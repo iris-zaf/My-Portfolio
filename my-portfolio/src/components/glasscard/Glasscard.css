@@ -1,0 +1,17 @@
+.glass-card {
+  display: flex;
+  flex-direction: column;
+  height: 20em;
+  width: 40em;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  background: #c2c6d666;
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+  background-clip: border-box;
+  cursor: pointer;
+}
