@@ -4,7 +4,7 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-p {
+.intro {
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -52,16 +52,18 @@ p {
   align-items: center;
   justify-content: center;
   position: absolute;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
 }
 .content span.img-txt {
-  background-color: #333;
+  background-color: #1c1d21a3;
   text-transform: uppercase;
   color: #b47f7f;
+  text-shadow: #1c1d21a3 1px 0 3px;
   padding: 1rem;
   font-size: 1.5rem;
   letter-spacing: 10px;
+  font-weight: 600;
 }
 h3 {
   letter-spacing: 6px;
@@ -80,7 +82,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   background: #1b2430;
-  padding: 20px 80px;
+  padding: 70px 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 #navbar {
@@ -91,6 +93,7 @@ h3 {
 #navbar li {
   list-style: none;
   padding: 0 20px;
+  text-transform: uppercase;
   position: relative;
   font-weight: 600;
   color: white;
@@ -100,6 +103,7 @@ h3 {
   color: #ecd4d4;
   cursor: pointer;
 }
+
 .glassCardCont {
   display: flex;
   align-items: center;
@@ -111,11 +115,114 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.smallCardContainer {
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -6px 5px -6px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.smallCardContainer:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+  border: none;
+}
+.smallCard {
+  backdrop-filter: blur(10px);
+  background: #898d9d66;
+  border: 2px solid transparent;
+}
+a {
+  color: white;
+  font-weight: 600;
+}
+a:hover {
+  color: #1b2430;
+}
+.glass-card {
+  height: 15em;
+}
+
 @keyframes animate {
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .toggleBtn {
+    visibility: hidden !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navContainer img {
+    display: block;
+  }
+  .navContainer {
+    padding: 51px 55px;
+  }
+  .glass-card {
+    height: 17em;
+    width: 22em;
+  }
+  .smallCardContainer {
+    height: 36em;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    font-size: 15px;
+  }
+  #navbar li {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    padding: 3px;
+  }
+  .toggleBtn {
+    display: block;
+    padding: 0px;
+  }
+  .center {
+    top: 35%;
+    left: 86%;
+    transform: translate(-3%, -50%);
+    position: absolute;
+    width: 2em;
+  }
+
+  .center:before,
+  .center:after,
+  .center div {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+
+  .center:hover:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  .center:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  .center:hover div {
+    transform: scale(0);
+  }
+  .intro {
+    font-size: 1em;
+  }
+  .content span.img-txt {
+    font-size: 12px;
   }
 }

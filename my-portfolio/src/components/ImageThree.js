@@ -3,8 +3,7 @@ const ImageThree = () => (
   <Parallax className="image" strength={800}>
     {" "}
     <div className="content">
-      {" "}
-      <span className="img-txt">Follow me</span>
+      {/* <span className="img-txt">Follow me</span> */}
     </div>{" "}
   </Parallax>
 );
