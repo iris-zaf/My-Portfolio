@@ -1,0 +1,12 @@
+.footerContainer {
+  background: #000000e8;
+  color: white;
+}
+.footerContainer ul li {
+  list-style: none;
+}
+@media screen and (min-width: 750px) {
+  form {
+    width: 60%;
+  }
+}

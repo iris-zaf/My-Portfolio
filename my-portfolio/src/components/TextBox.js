@@ -3,7 +3,7 @@ import Arrow from "../components/down-arrow.png";
 function TextBox() {
   return (
     <>
-      <div className="text-box">
+      <div className="text-box" id="about">
         <h3>Welcome To My World</h3>
         <p className="intro">
           I am a Full Stack Web Developer with a passion for learning new
