@@ -61,7 +61,7 @@ const ImageOne = () => {
                 </HashLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <HashLink to="/#">Contact Me</HashLink>
+                <HashLink to="/#contact">Contact Me</HashLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

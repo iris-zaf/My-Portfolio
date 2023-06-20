@@ -1,16 +1,10 @@
 import React from "react";
-import {
-  MDBRow,
-  MDBCol,
-  MDBInput,
-  MDBCheckbox,
-  MDBBtn,
-} from "mdb-react-ui-kit";
+import { MDBRow, MDBCol, MDBInput, MDBBtn } from "mdb-react-ui-kit";
 import "../contact/Contact.css";
 function Contact() {
   return (
     <>
-      <div className="footerContainer ">
+      <div className="footerContainer " id="contact">
         <MDBRow>
           <MDBCol className="m-5">
             <h5 className="m-5">CONTACT ME</h5>
