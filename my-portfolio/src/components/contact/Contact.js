@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { MDBRow, MDBCol, MDBInput, MDBBtn } from "mdb-react-ui-kit";
+import { MDBRow, MDBCol, MDBInput } from "mdb-react-ui-kit";
 import axios from "axios";
 
 import "../contact/Contact.css";
 function Contact() {
   const [recipient_email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  function sendMail() {
+  function sendMail(e) {
     if (recipient_email && message) {
       axios
         .post("http://localhost:5000/sendEmail", {
@@ -17,6 +17,7 @@ function Contact() {
         .catch((error) => console.log(error));
       return;
     }
+
     return alert("Fill in all the fields to continue");
   }
 
@@ -77,19 +78,19 @@ function Contact() {
                     onChange={(e) => setMessage(e.target.value)}
                   />{" "}
                 </div>
-                <MDBBtn
+                <button
                   type="submit"
-                  className="mb-4 "
+                  className="contactBtn"
                   block
                   style={{
-                    background: " #ecd4d4",
-                    color: "#000000e8",
-                    fontWeight: "600",
+                    background: "rgb(70,64,64)",
+                    color: "white",
+                    fontWeight: "500",
                   }}
                   onClick={() => sendMail()}
                 >
-                  Get in Contact🤘
-                </MDBBtn>
+                  Get in Contact🔗
+                </button>
               </form>{" "}
             </div>
           </MDBCol>

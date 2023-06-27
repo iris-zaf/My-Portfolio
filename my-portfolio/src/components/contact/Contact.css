@@ -8,6 +8,14 @@
 .footerContainer ul li {
   list-style: none;
 }
+.contactBtn {
+  border-radius: 1em;
+}
+.contactBtn:hover {
+  border: 2px solid #f3f3f3;
+  background: #ecd4d4;
+  color: #000;
+}
 @media screen and (min-width: 750px) {
   form {
     width: 60%;
