@@ -4,7 +4,7 @@ import Fluid from "../images/fluidArt.avif";
 const ImageTwo = () => (
   <Parallax className="image" bgImage={Fluid} strength={800}>
     <div className="content">
-      <span className="img-txt">Have a look at my projects below</span>
+      <span className="img-txt">Have a look at my Projects</span>
     </div>
   </Parallax>
 );

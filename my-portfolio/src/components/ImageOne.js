@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Parallax } from "react-parallax";
-
+import Pdf from "../components/Iris_CV.pdf";
 import { HashLink } from "react-router-hash-link";
 import {
   MDBNavbar,
@@ -8,7 +8,7 @@ import {
   MDBIcon,
   MDBNavbarNav,
   MDBNavbarItem,
-  MDBNavbarLink,
+  MDBBtn,
   MDBNavbarToggler,
   MDBNavbarBrand,
   MDBCollapse,
@@ -20,7 +20,7 @@ import Flower from "../components/flower.png";
 const ImageOne = () => {
   const [showNavColorSecond, setShowNavColorSecond] = useState(false);
   return (
-    <Parallax className="image" strength={800}>
+    <>
       <MDBNavbar expand="lg" dark bgColor="dark" id="navbar">
         <MDBContainer fluid>
           <Zoom>
@@ -63,15 +63,22 @@ const ImageOne = () => {
               <MDBNavbarItem>
                 <HashLink to="/#contact">Contact Me</HashLink>
               </MDBNavbarItem>
+              <MDBNavbarItem>
+                <div className="wrapper"></div>
+                <a href={Pdf} target="_blank" className="button outline">
+                  My CV
+                </a>
+              </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-
-      <div className="glassCardCont">
-        <GlassCard />
-      </div>
-    </Parallax>
+      <Parallax className="image" strength={800}>
+        <div className="glassCardCont">
+          <GlassCard />
+        </div>
+      </Parallax>
+    </>
   );
 };
 export default ImageOne;

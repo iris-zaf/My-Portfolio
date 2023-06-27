@@ -1,6 +1,9 @@
+* {
+  font-family: "Inter";
+}
 .footerContainer {
-  background: #000000e8;
-  color: white;
+  color: #464040;
+  font-size: 1.2em;
 }
 .footerContainer ul li {
   list-style: none;
@@ -8,5 +11,9 @@
 @media screen and (min-width: 750px) {
   form {
     width: 60%;
+    margin: 1rem;
+  }
+  .contactList {
+    color: red;
   }
 }

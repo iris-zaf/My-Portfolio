@@ -1,5 +1,6 @@
 import "../glasscard/Glasscard.css";
 import { useSpring, animated } from "react-spring";
+import { motion } from "framer-motion";
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
   (x - window.innerWidth / 2) / 20,
@@ -12,6 +13,28 @@ function GlassCard() {
     xys: [0, 0, 1],
     config: { mass: 10, tension: 200, friction: 50 },
   }));
+  const line1 = "Hey, I'm Iris.";
+  const line2 = " I'm a Full Stack Developer";
+  const sentence = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        staggerChildren: 0.08,
+      },
+    },
+  };
+
+  const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+
+      y: 5,
+    },
+  };
+
   return (
     <animated.div
       className="glass-card"
@@ -21,10 +44,42 @@ function GlassCard() {
         transform: props.xys.interpolate(trans),
       }}
     >
-      <h1>Hey! I'm Iris Kalogirou</h1>
-      <h5>
-        I'm a developer based in Greece. <br></br>
-      </h5>
+      <motion.div
+        className="load-screen--message"
+        variants={sentence}
+        initial="hidden"
+        animate="visible"
+      >
+        {line1.split("").map((char, index) => {
+          return (
+            <motion.span key={char + "-" + index} variants={letter}>
+              {char}
+            </motion.span>
+          );
+        })}
+        <br />
+        {line2.split("").map((char, index) => {
+          return (
+            <motion.span key={char + "-" + index} variants={letter}>
+              {char}
+            </motion.span>
+          );
+        })}
+        {/* <h1>Hey, I'm Iris.</h1>
+        <p>
+          {" "}
+          I'm a{" "}
+          <span
+            style={{
+              fontWeight: "700",
+              fontSize: "25px",
+              color: "rgb(125 62 62)",
+            }}
+          >
+            Full Stack Developer
+          </span>{" "}
+        </p> */}
+      </motion.div>
     </animated.div>
   );
 }
