@@ -24,7 +24,7 @@ function sendEmail(props) {
     const mail_configs = {
       from: "",
       to: "iriri2313@gmail.com",
-      subject: "Iris Kalogirou",
+      subject: "",
       text: props.message,
     };
     transporter.sendMail(mail_configs, function (error, info) {

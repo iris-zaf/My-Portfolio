@@ -6,6 +6,7 @@ import "../contact/Contact.css";
 function Contact() {
   const [recipient_email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
   function sendMail(e) {
     if (recipient_email && message) {
       axios
@@ -13,7 +14,7 @@ function Contact() {
           recipient_email,
           message,
         })
-        .then(() => alert("Message send successfully"))
+        .then(alert("Message send successfully"))
         .catch((error) => console.log(error));
       return;
     }
@@ -78,6 +79,7 @@ function Contact() {
                     onChange={(e) => setMessage(e.target.value)}
                   />{" "}
                 </div>
+
                 <button
                   type="submit"
                   className="contactBtn"
