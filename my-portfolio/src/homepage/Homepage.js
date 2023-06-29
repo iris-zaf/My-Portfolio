@@ -72,7 +72,7 @@ function Home() {
                 </large>
                 <br></br>
                 <a
-                  href="weather-app-iris.netlify.app"
+                  href="https://weather-app-iris.netlify.app"
                   target="_blank"
                   rel="noreferrer"
                 >
