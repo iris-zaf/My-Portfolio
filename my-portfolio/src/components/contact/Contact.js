@@ -79,13 +79,13 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="contactBtn"
+                  className="button contactBtn"
                   block
-                  style={{
-                    background: "rgb(70,64,64)",
-                    color: "white",
-                    fontWeight: "500",
-                  }}
+                  // style={{
+                  //   background: "rgb(70,64,64)",
+                  //   color: "white",
+                  //   fontWeight: "500",
+                  // }}
                   onClick={() => sendMail()}
                 >
                   Let's connect🔗
