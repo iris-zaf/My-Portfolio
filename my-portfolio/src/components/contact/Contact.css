@@ -16,6 +16,9 @@
   background: #ecd4d4;
   color: #000;
 }
+.locationText {
+  font: italic 1em "Fira Sans", serif;
+}
 @media screen and (min-width: 750px) {
   form {
     width: 60%;

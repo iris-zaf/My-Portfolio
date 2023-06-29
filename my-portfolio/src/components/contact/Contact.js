@@ -26,16 +26,13 @@ function Contact() {
     <>
       <div className="footerContainer " id="contact">
         <MDBRow>
-          <MDBCol className="m-5">
+          <MDBCol className="m-5 ">
             <ul>
               <li>
-                <a href="#" target="_blank">
-                  <i
-                    class="fas fa-envelope fa-beat m-2"
-                    style={{ color: "black" }}
-                  ></i>
-                </a>
-                iriskalogirou1@gmail.com
+                <div>
+                  Location:
+                  <div className="locationText">Athens, Greece</div>
+                </div>
               </li>
               <li>
                 <a
@@ -59,7 +56,7 @@ function Contact() {
 
           <MDBCol className="m-5">
             <div>
-              <form className=" p-4  pb-4 ">
+              <form className="   pb-4 ">
                 <div>
                   <label htmlFor="email">Email:</label>
                   <MDBInput
@@ -91,7 +88,7 @@ function Contact() {
                   }}
                   onClick={() => sendMail()}
                 >
-                  Get in Contact🔗
+                  Let's connect🔗
                 </button>
               </form>{" "}
             </div>
