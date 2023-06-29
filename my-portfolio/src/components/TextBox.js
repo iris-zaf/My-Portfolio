@@ -1,6 +1,7 @@
 import React from "react";
-import Arrow from "../components/down-arrow.png";
+import Pdf from "../components/Iris_CV.pdf";
 import { motion } from "framer-motion";
+import "../homepage/Homepage.css";
 function TextBox() {
   return (
     <>
@@ -19,10 +20,16 @@ function TextBox() {
         </motion.h3>
         <p className="intro">
           I am a Full Stack Web Developer with a passion for learning new
-          technologies. While attending an intensive seven month bootcamp I
-          worked with the MERN Stack technologies, creating multiple projects.{" "}
-          <img src={Arrow} alt="arrow" style={{ width: "2em" }} />
+          technologies. While attending an intensive coding bootcamp I am
+          proficient in MERN Stack.
         </p>
+        <br></br> <div className="wrapper"></div>
+        <div style={{ textAlign: "center" }}>
+          {" "}
+          <a href={Pdf} target="_blank" className="button outline">
+            CHECK MY CV
+          </a>
+        </div>
       </div>
     </>
   );

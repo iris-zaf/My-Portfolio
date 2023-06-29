@@ -50,12 +50,22 @@ function Home() {
             <MDBCard className="h-100 smallCard">
               {/* <MDBCardImage src={Athens} alt="weather-app" position="top" /> */}
               <MDBCardBody>
-                <MDBCardTitle>Weather App</MDBCardTitle>
+                <MDBCardTitle>
+                  {" "}
+                  <a
+                    href="https://weather-app-iris.netlify.app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Weather App{" "}
+                  </a>
+                </MDBCardTitle>
                 <MDBCardText>
-                  This is a weather app that shows the weather of the city you
-                  search for ,collecting data from the OpenWeatherMap API. While
-                  searching for a place the background image changes based on
-                  the location searched with the help of the unsplash API.
+                  Weather App allows the user to get informed of the
+                  temperature, humidity and wind speed of the city they search.
+                  It utalizes the OpenWeatherMap and Unsplash APIs. Providing a
+                  better experience,the background changes depending on the
+                  city.
                 </MDBCardText>
               </MDBCardBody>
               <MDBCardFooter>
@@ -70,14 +80,6 @@ function Home() {
                 <large className="text-muted ">
                   <i class="fa-brands fa-js fa-xl p-2"></i>
                 </large>
-                <br></br>
-                <a
-                  href="https://weather-app-iris.netlify.app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit the Project
-                </a>
               </MDBCardFooter>
             </MDBCard>
           </motion.div>
@@ -89,22 +91,24 @@ function Home() {
             transition={{ duration: 2 }}
           >
             <MDBCard className="h-100 smallCard">
-              {/* <MDBCardImage
-                src={Donation}
-                alt="donation"
-                position="top"
-                style={{ height: "30vh" }}
-              /> */}
               <MDBCardBody>
-                <MDBCardTitle>BeeKind Donation App</MDBCardTitle>
+                <MDBCardTitle>
+                  {" "}
+                  <a
+                    href="https://beekind.netlify.app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    BeeKind
+                  </a>
+                </MDBCardTitle>
                 <MDBCardText>
-                  This is a donation app that allows users to donate to various
-                  charities. All data is collected from the Every.orf Charity
-                  API. With the use of the Stripe API the user is able to enter
-                  their credit card details and proceed with the payment. There
-                  is an option to subscribe to the newsletter with a valid gmail
-                  address and get a notification verifying the subscription
-                  process.
+                  BeeKind allows users to donate easily to various charities
+                  across the US and UK. Every.org Charity API is being used for
+                  all charity data to be fetched. Powered by the Stripe API,each
+                  user is able to enter their debit/credit card details in order
+                  to donate to their selected charity. Email subscription is
+                  offered as an option.
                 </MDBCardText>
               </MDBCardBody>
               <MDBCardFooter>
@@ -119,14 +123,6 @@ function Home() {
                 <large className="text-muted imageContainer">
                   <img src={mongodb} alt="mongodb" style={{ width: "25px" }} />
                 </large>
-                <br></br>
-                <a
-                  href="https://beekind.netlify.app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit the Project
-                </a>
               </MDBCardFooter>
             </MDBCard>
           </motion.div>

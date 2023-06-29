@@ -29,12 +29,6 @@ function Contact() {
           <MDBCol className="m-5 ">
             <ul>
               <li>
-                <div>
-                  Location:
-                  <div className="locationText">Athens, Greece</div>
-                </div>
-              </li>
-              <li>
                 <a
                   href=" https://www.linkedin.com/in/iris-kalogirou"
                   target="_blank"
@@ -88,7 +82,7 @@ function Contact() {
                   // }}
                   onClick={() => sendMail()}
                 >
-                  Let's connect🔗
+                  <span>Let's connect</span>🔗
                 </button>
               </form>{" "}
             </div>

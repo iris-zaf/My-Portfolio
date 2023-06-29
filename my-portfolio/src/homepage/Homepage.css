@@ -50,18 +50,18 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 }
 .content span.img-txt {
   background-color: #1c1d21a3;
   text-transform: uppercase;
-  color: #b47f7f;
+  color: white;
   text-shadow: #1c1d21a3 1px 0 3px;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 10px;
-  font-weight: 600;
+  font-weight: 800;
 }
 h3 {
   letter-spacing: 6px;
@@ -143,10 +143,10 @@ a:hover {
   width: 90px;
 
   font-family: "Inter";
-
+  font-size: 20px;
   padding: 0.5rem 1rem;
   border-radius: 0.375rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   transition-duration: 0.3s;
   transition-property: all;
@@ -155,7 +155,8 @@ a:hover {
 }
 .button.outline {
   border: 1px solid white;
-  color: #e1e7ef;
+
+  color: #8e4242;
 }
 .button.outline:hover {
   border: 1px solid #f3f3f3;
@@ -195,12 +196,19 @@ a:hover {
   .navContainer {
     align-items: center;
   }
+  .content span.img-txt {
+    text-align: center;
+    font-size: 1.5em;
+  }
 }
 @media screen and (max-width: 750px) {
   .navContainer img {
     display: block;
   }
-
+  .content span.img-txt {
+    text-align: center;
+    font-size: 1.5em;
+  }
   .navContainer {
     padding: 51px 55px;
   }
@@ -265,8 +273,5 @@ a:hover {
   }
   .intro {
     font-size: 1em;
-  }
-  .content span.img-txt {
-    font-size: 12px;
   }
 }

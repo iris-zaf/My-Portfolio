@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Parallax } from "react-parallax";
-import Pdf from "../components/Iris_CV.pdf";
+// import Pdf from "../components/Iris_CV.pdf";
 import { HashLink } from "react-router-hash-link";
 import {
   MDBNavbar,
@@ -64,10 +64,10 @@ const ImageOne = () => {
                 <HashLink to="/#contact">Contact Me</HashLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <div className="wrapper"></div>
+                {/* <div className="wrapper"></div>
                 <a href={Pdf} target="_blank" className="button outline">
                   My CV
-                </a>
+                </a> */}
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
