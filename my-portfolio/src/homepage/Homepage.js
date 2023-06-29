@@ -71,7 +71,11 @@ function Home() {
                   <i class="fa-brands fa-js fa-xl p-2"></i>
                 </large>
                 <br></br>
-                <a href="#" target="_blank" rel="noreferrer">
+                <a
+                  href="weather-app-iris.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Visit the Project
                 </a>
               </MDBCardFooter>
