@@ -1,5 +1,5 @@
 import React from "react";
-import Pdf from "../components/Iris_CV.pdf";
+import Pdf from "../components/Iris_CV1.pdf";
 import { motion } from "framer-motion";
 import "../homepage/Homepage.css";
 function TextBox() {
