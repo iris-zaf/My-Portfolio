@@ -40,6 +40,7 @@ function Contact() {
               <li>
                 <a
                   href="https://github.com/iris-zaf"
+                  target="_blank"
                   class="fab fa-github fa-beat m-2"
                   style={{ color: "black" }}
                 ></a>
