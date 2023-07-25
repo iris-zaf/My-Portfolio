@@ -17,8 +17,8 @@ function sendEmail(props) {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "iriskalogirou1@gmail.com",
-        pass: "sgihbpvrrxmvfctu",
+        user: process.env.EMAIL_ID,
+        pass: process.env.PASSWORD,
       },
     });
     const mail_configs = {
