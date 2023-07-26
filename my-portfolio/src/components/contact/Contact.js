@@ -1,27 +1,8 @@
-import React, { useState } from "react";
-import { MDBRow, MDBCol, MDBInput } from "mdb-react-ui-kit";
-import axios from "axios";
+import React from "react";
+import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 import "../contact/Contact.css";
 function Contact() {
-  const [recipient_email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  function sendMail(e) {
-    if (recipient_email && message) {
-      axios
-        .post("http://localhost:5000/sendEmail", {
-          recipient_email,
-          message,
-        })
-        .then(alert("Message send successfully"))
-        .catch((error) => console.log(error));
-      return;
-    }
-
-    return alert("Fill in all the fields to continue");
-  }
-
   return (
     <>
       <div className="footerContainer " id="contact">
@@ -34,7 +15,9 @@ function Contact() {
                   target="_blank"
                   class="fab fa-linkedin fa-beat m-2"
                   style={{ color: "black" }}
-                ></a>
+                >
+                  {" "}
+                </a>{" "}
                 Iris Kalogirou
               </li>
               <li>
@@ -43,7 +26,9 @@ function Contact() {
                   target="_blank"
                   class="fab fa-github fa-beat m-2"
                   style={{ color: "black" }}
-                ></a>
+                >
+                  {" "}
+                </a>{" "}
                 iris-zaf
               </li>
             </ul>
@@ -52,39 +37,17 @@ function Contact() {
           <MDBCol className="m-5">
             <div>
               <form className="   pb-4 ">
-                <div>
-                  <label htmlFor="email">Email:</label>
-                  <MDBInput
-                    type="email"
-                    wrapperClass="mb-4"
-                    textarea
-                    id="form4Example2"
-                    rows={4}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />{" "}
-                  <label>Message:</label>
-                  <MDBInput
-                    wrapperClass="mb-4"
-                    textarea
-                    id="form4Example3"
-                    rows={4}
-                    onChange={(e) => setMessage(e.target.value)}
-                  />{" "}
-                </div>
-
-                <button
-                  type="submit"
+                <div></div>
+                <a
+                  href="mailto:iriri2313@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="button contactBtn"
-                  block
-                  // style={{
-                  //   background: "rgb(70,64,64)",
-                  //   color: "white",
-                  //   fontWeight: "500",
-                  // }}
-                  onClick={() => sendMail()}
+                  value="connect"
                 >
+                  {" "}
                   <span>Let's connect</span>🔗
-                </button>
+                </a>
               </form>{" "}
             </div>
           </MDBCol>
