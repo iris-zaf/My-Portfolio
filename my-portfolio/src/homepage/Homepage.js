@@ -16,7 +16,6 @@ import {
 } from "mdb-react-ui-kit";
 import "../homepage/Homepage.css";
 import Contact from "../components/contact/Contact";
-import Contact2 from "../components/contact/Contact2.js";
 import { motion } from "framer-motion";
 function Home() {
   return (
@@ -179,7 +178,6 @@ function Home() {
         <hr class="separator separator--line" />
         <Contact />
       </div>{" "}
-      <Contact2 />
     </>
   );
 }

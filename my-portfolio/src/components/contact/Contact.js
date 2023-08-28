@@ -54,7 +54,7 @@ function Contact() {
               </div>
             </MDBCol>
           </MDBCol>{" "}
-          <MDBCol className=" col-12 m-2 col-md-3 col-lg-3">
+          <MDBCol className=" col-12 m-1 col-md-3 col-lg-3">
             {" "}
             <EarthCanvas />
           </MDBCol>
