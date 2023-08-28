@@ -2,12 +2,13 @@ import React from "react";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 import "../contact/Contact.css";
+import EarthCanvas from "../Earth";
 function Contact() {
   return (
     <>
       <div className="footerContainer " id="contact">
         <MDBRow>
-          <MDBCol className="m-5 ">
+          <MDBCol className="col-8 m-1 text-center col-md-3 col-lg-5">
             <ul>
               <li>
                 <a
@@ -33,23 +34,29 @@ function Contact() {
               </li>
             </ul>
           </MDBCol>
-
-          <MDBCol className="m-5">
-            <div>
-              <form className="   pb-4 ">
+          <MDBCol className=" col-10 m-1 text-center  col-md-5 col-lg-3">
+            <MDBCol>
+              <div>
+                <form>
+                  <div></div>
+                  <a
+                    href="mailto:iriri2313@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button contactBtn"
+                    value="connect"
+                  >
+                    {" "}
+                    <span>Let's connect</span>🔗
+                  </a>
+                </form>{" "}
                 <div></div>
-                <a
-                  href="mailto:iriri2313@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="button contactBtn"
-                  value="connect"
-                >
-                  {" "}
-                  <span>Let's connect</span>🔗
-                </a>
-              </form>{" "}
-            </div>
+              </div>
+            </MDBCol>
+          </MDBCol>{" "}
+          <MDBCol className=" col-12 m-2 col-md-3 col-lg-3">
+            {" "}
+            <EarthCanvas />
           </MDBCol>
         </MDBRow>
       </div>

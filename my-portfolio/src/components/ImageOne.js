@@ -17,6 +17,7 @@ import GlassCard from "../components/glasscard/Glasscard";
 import Zoom from "react-reveal/Zoom";
 import "../homepage/Homepage.css";
 import Flower from "../components/flower.png";
+
 const ImageOne = () => {
   const [showNavColorSecond, setShowNavColorSecond] = useState(false);
   return (
@@ -63,12 +64,7 @@ const ImageOne = () => {
               <MDBNavbarItem>
                 <HashLink to="/#contact">Contact Me</HashLink>
               </MDBNavbarItem>
-              <MDBNavbarItem>
-                {/* <div className="wrapper"></div>
-                <a href={Pdf} target="_blank" className="button outline">
-                  My CV
-                </a> */}
-              </MDBNavbarItem>
+              <MDBNavbarItem></MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
