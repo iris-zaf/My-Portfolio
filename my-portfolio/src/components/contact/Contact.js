@@ -7,7 +7,7 @@ function Contact() {
   return (
     <>
       <div className="footerContainer " id="contact">
-        <MDBRow>
+        <MDBRow className="p-3">
           <MDBCol className="col-8 m-1 text-center col-md-3 col-lg-5">
             <ul>
               <li>
