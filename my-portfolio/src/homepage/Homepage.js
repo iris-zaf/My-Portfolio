@@ -136,43 +136,6 @@ function Home() {
               </MDBCard>
             </motion.div>
           </MDBCol>
-          <MDBCol className="smallCardContainer">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 2 }}
-            >
-              <MDBCard className="h-100 smallCard">
-                <MDBCardBody>
-                  <MDBCardTitle>
-                    {" "}
-                    <a
-                      href="https://chit-chat-iris.netlify.app"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Chit-Chat(In Production)
-                    </a>
-                  </MDBCardTitle>
-                  <MDBCardText>
-                    Chit-Chat helps users interact via text messages, videos and
-                    many more. Each user has their own profile with the saved
-                    chats and the ability to create new ones.
-                  </MDBCardText>
-                </MDBCardBody>
-                <MDBCardFooter>
-                  <small className="text-muted">Technologies used:</small>
-                  <br />
-                  <large className="text-muted ">
-                    <i class="fa-brands fa-react fa-xl p-2"></i>
-                  </large>
-                  <large className="text-muted ">
-                    <i class="fa-brands fa-node fa-xl p-2"></i>
-                  </large>
-                </MDBCardFooter>
-              </MDBCard>
-            </motion.div>
-          </MDBCol>
         </MDBRow>{" "}
         <hr class="separator" />
         <hr class="separator separator--line" />
