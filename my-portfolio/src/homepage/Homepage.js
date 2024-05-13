@@ -136,6 +136,55 @@ function Home() {
               </MDBCard>
             </motion.div>
           </MDBCol>
+          <MDBCol className="smallCardContainer">
+            {" "}
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 2 }}
+            >
+              <MDBCard className="h-100 smallCard">
+                {/* <MDBCardImage src={Athens} alt="weather-app" position="top" /> */}
+                <MDBCardBody>
+                  <MDBCardTitle>
+                    {" "}
+                    <a
+                      href="http://irissblog.infinityfreeapp.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      CMS Blog App{" "}
+                    </a>
+                  </MDBCardTitle>
+                  <MDBCardText>
+                    A simple blog app, where the admin can manage posts(CRUD
+                    OPERATION). The app uses sql queries to fetch,create, update
+                    or delete data(posts,comments,images) from the database. As
+                    I am actively working on this project at the moment, there
+                    are going to be changes frequently to the functionality as
+                    well as the view of this app. ✨✨
+                  </MDBCardText>
+                </MDBCardBody>
+                <MDBCardFooter>
+                  <small className="text-muted">Technologies used:</small>
+                  <br />
+                  <large className="text-muted ">
+                    <i class="fa-brands fa-html5 fa-xl p-2"></i>
+                  </large>
+                  <large className="text-muted ">
+                    <i class="fa-brands fa-css3-alt fa-xl p-2"></i>
+                  </large>
+                  <large className="text-muted ">
+                    <i class="fa-brands fa-js fa-xl p-2"></i>
+                  </large>
+                  <large className="text-muted ">SQL</large>
+                  <large className="text-muted ">
+                    <i class="fa-brands fa-php fa-xl p-2"></i>
+                  </large>
+                </MDBCardFooter>
+              </MDBCard>
+            </motion.div>
+          </MDBCol>
         </MDBRow>{" "}
         <hr class="separator" />
         <hr class="separator separator--line" />
